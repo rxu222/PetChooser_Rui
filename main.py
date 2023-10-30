@@ -87,5 +87,7 @@ def main():
     # Call the main function
 try:
     main()  # Call the main function if the script is executed as the main program
-except Exception as e:
-    print(f"An error occurred: {e}")
+except ValueError as ve:
+    print(f"ValueError: {ve}")
+except EOFError as ee:
+    print(f"EOFError: {ee}")
